@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="./js/vue.js" type="text/javascript"></script>
+		<title></title>
+	</head>
+	<body>
+		<div id="app">
+		<li v-if="score>=90">优秀</li>
+		<li v-if="score>=80 && score<90">中等</li>
+		<li v-if="score>=70 && score<80">良好</li>
+		<li v-if="score>=60 && score<70">中等</li>
+		<li v-if="score<60">不及格</li>
+		
+		{{rdmNumber}}
+	</div>
+	<script type="text/javascript">
+		
+		let v=new Vue({
+			el:'#app',
+			data:{
+				score:'99',
+				rdmNumber:Math.floor(Math.random()*10)
+			}
+		})
+	</script>
+	</body>
+</html>
