@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="js/vue.js" charset="utf-8"></script>
+		<title>985-211大学判断</title>
+	</head>
+	<body>
+	<div id="app">
+		输入学校名称：
+		<input type="" name="" id="" value="" v-model="university" /><br>
+		{{university}}是
+		<div v-if="university=='兰州大学'||university=='清华大学'||university=='北京大学'">985、211大学</div>
+		<div v-if="university=='东华大学'||university=='东北大学'||university=='西北大学'">211大学</div>
+		
+	</div>
+	<script type="text/javascript">
+		let v=new Vue({
+			el:'#app',
+			data:{
+				university:''
+			}
+		})
+	</script>
+	</body>
+</html>
