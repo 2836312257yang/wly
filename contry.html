@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<input type="" v-model="c" name="" id="" value="" />
+			<div>{{c}}</div>
+		
+			
+			<div v-if="c==1">您输入的是{{c}}，+{{c}}代表美国</div>
+			<div v-if="c==86">您输入的是{{c}}，+{{c}}代表中国</div>
+			<div v-if="c==81">您输入的是{{c}}，+{{c}}代表日本</div>
+			<div v-if="c==44">您输入的是{{c}}，+{{c}}代表英国</div>
+		</div>
+		<script type="text/javascript">
+			let v=new Vue({
+				el:'#app',
+				data:{
+					c:''
+				}
+			})
+		</script>
+	</body>
+</html>
