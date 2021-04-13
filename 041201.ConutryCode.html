@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="js/vue.js" charset="utf-8"></script>
+		<title></title>
+	</head>
+	<body>
+		<div id="app">
+			<input type="" v-model="usernum" name="" id="" value="" />
+			
+			<div v-if="usernum==86">您输入的是{{usernum}}，+{{usernum}}代表{{c[0].conutry}}---首都为{{c[0].capital}}</div>
+			<div v-if="usernum==1"> 您输入的是{{usernum}}，+{{usernum}}代表{{c[1].conutry}}---首都为{{c[1].capital}}</div>
+			<div v-if="usernum==81">您输入的是{{usernum}}，+{{usernum}}代表{{c[2].conutry}}---首都为{{c[2].capital}}</div>
+			<div v-if="usernum==44">您输入的是{{usernum}}，+{{usernum}}代表{{c[3].conutry}}---首都为{{c[3].capital}}</div>
+			<div v-if="usernum==49">您输入的是{{usernum}}，+{{usernum}}代表{{c[4].conutry}}---首都为{{c[4].capital}}</div>
+			<div v-if="usernum==66">您输入的是{{usernum}}，+{{usernum}}代表{{c[5].conutry}}---首都为{{c[5].capital}}</div>
+			
+			
+			
+		<script type="text/javascript">
+			let v=new Vue({
+				el:'#app',
+				data:{
+					usernum:'',
+					c:[
+						{conutry:'中国',capital:'北京'},
+						{conutry:'美国',capital:'华盛顿'},
+						{conutry:'日本',capital:'东京'},
+						{conutry:'英国',capital:'伦敦'},
+						{conutry:'德国',capital:'柏林'},
+						{conutry:'泰国',capital:'曼谷'}
+					]
+				}
+			})
+		</script>
+	</body>
+</html>
